@@ -70,9 +70,10 @@ math.html
         </form>
     </body>
 </html>
-views.py
 ```
-    from django.shortcuts import render
+views.py
+
+from django.shortcuts import render
 
 def churn_rate(request):
     l = float(request.POST.get('lost', '0'))
@@ -89,9 +90,10 @@ def churn_rate(request):
         'mathapp/churnRate.html',
         {'l': l, 'i': i, 'churnrate': churnrate}
     )
-urls.py
 ```
-    from django.contrib import admin
+urls.py
+
+ from django.contrib import admin
 from django.urls import path
 from mathapp import views
 
