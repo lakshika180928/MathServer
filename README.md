@@ -72,7 +72,7 @@ math.html
 </html>
 ```
 views.py
-
+```
 from django.shortcuts import render
 
 def churn_rate(request):
@@ -92,6 +92,7 @@ def churn_rate(request):
     )
 ```
 urls.py
+```
 
  from django.contrib import admin
 from django.urls import path
